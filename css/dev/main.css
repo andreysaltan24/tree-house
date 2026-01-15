@@ -69,6 +69,7 @@
   justify-content: space-between;
   gap: 1.25rem;
   color: #ffffff;
+  pointer-events: none;
 }
 .hint-hero__scroll {
   display: flex;
@@ -434,7 +435,7 @@
   display: flex;
   align-items: flex-end;
   margin-bottom: 1rem;
-  overflow: hidden;
+  overflow: clip;
 }
 .slide-shoplook__block {
   background: rgba(80, 115, 95, 0.8);
@@ -1413,6 +1414,11 @@ html[data-fls-menu-open] .announcementbar, body[data-fls-menu-open] .announcemen
     border-radius: 50%;
     color: #c58a46;
     font-size: 1rem;
+  }
+  .swiper-button-disabled {
+    background: rgba(80, 115, 95, 0.2);
+    color: #50735f;
+    pointer-events: none;
   }
   .slide-body-touch__card {
     display: flex;
