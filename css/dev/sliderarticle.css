@@ -65,6 +65,12 @@
 
 /*#endregion*/
 
+@media (max-width: 61.99875em) {
+  .slider-article {
+    margin-inline: -0.9375rem;
+  }
+}
+
 @media (width <= 20em) {
   .slider-article__wrapper {
     margin-bottom: 1.625rem;

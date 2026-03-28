@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<style data-fls-preloader="false" rel="preload">
+			body > *:not(.fls-preloader) {
+    opacity: 0;
+    visibility: hidden;
+  }
+  [data-fls-preloader-loaded] body > *:not(.fls-preloader) {
+    transition: opacity 0.5s ease 0s;
+    opacity: 1;
+    visibility: visible;
+  }
+		</style>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="preload" href="./assets/fonts/stolzl_regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -12,634 +23,322 @@
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<meta name="description" content="Discover TreeHouse’s gender-neutral, eco-friendly kids clothing. High-quality, timeless styles crafted from sustainable materials for your little adventurer.">
 		<title>Tree House</title>
-		<script type="module" crossorigin="" src="./js/main.min.js?v=1768482384153"></script>
-		<link rel="modulepreload" crossorigin="" href="./js/main.min2.js?v=1768482384153">
-		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1768482384153">
-		<link rel="modulepreload" crossorigin="" href="./js/scrollto.min.js?v=1768482384153">
-		<link rel="modulepreload" crossorigin="" href="./js/slider.min.js?v=1768482384153">
-		<link rel="modulepreload" crossorigin="" href="./js/popup.min.js?v=1768482384153">
-		<link rel="modulepreload" crossorigin="" href="./js/watcher.min.js?v=1768482384153">
-		<link rel="stylesheet" crossorigin="" href="./css/main.min2.css?v=1768482384153">
-		<link rel="stylesheet" crossorigin="" href="./css/scrollto.min.css?v=1768482384153">
-		<link rel="stylesheet" crossorigin="" href="./css/slider.min.css?v=1768482384153">
-		<link rel="stylesheet" crossorigin="" href="./css/popup.min.css?v=1768482384153">
-		<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1768482384153">
+		<script type="module" crossorigin="" src="./js/main.min.js?v=1774702972125"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/main.min2.js?v=1774702972125">
+		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1774702972125">
+		<link rel="modulepreload" crossorigin="" href="./js/announcementbar.min.js?v=1774702972125">
+		<link rel="modulepreload" crossorigin="" href="./js/slider.min.js?v=1774702972125">
+		<link rel="stylesheet" crossorigin="" href="./css/main.min2.css?v=1774702972125">
+		<link rel="stylesheet" crossorigin="" href="./css/announcementbar.min.css?v=1774702972125">
+		<link rel="stylesheet" crossorigin="" href="./css/slider.min.css?v=1774702972125">
+		<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1774702972125">
+		<link rel="stylesheet" crossorigin="" href="./css/popup.min.css?v=1774702972125">
 		<link rel="preload" as="style" href="./css/webfonts.min.css">
 		<link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="./css/webfonts.min.css">
 	</head>
 	<body>
-		<section data-fls-announcementbar="" class="announcementbar">
-			<div class="announcementbar__container">
-				<div class="announcementbar__offers">
-					<a href="#!" class="announcementbar__offer">Get 25% off buying the entire capsule collection</a>
-					<div class="announcementbar__line"></div>
-					<a href="#!" data-fls-popup-link="popup-announcementbar" class="announcementbar__offer">Subscribe to us and get 15% off your first order</a>
-				</div>
-			</div>
-		</section>
-		<!--
-<div data-fls-popup="popup" aria-hidden="true" class="popup">
-<div data-fls-popup-wrapper class="popup__wrapper">
-<div data-fls-popup-body class="popup__body">
-<button data-fls-popup-close type="button" class="popup__close"><svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square" /><path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square" /></svg></button>
-<div data-fls-popup-content class="popup__text">
-</div>
-</div>
-</div>
-</div>
--->
-		<div data-fls-popup="popup-announcementbar" aria-hidden="true" class="announcementbar-popup">
-			<div data-fls-popup-wrapper="" class="announcementbar-popup__wrapper">
-				<div data-fls-popup-body="" class="announcementbar-popup__body">
-					<div class="announcementbar-popup__image">
-						<picture>
-							<img class="announcementbar-popup__image--main" alt="Image" src="./assets/img/popups/sign-up-popup/main-popup-image.webp">
-						</picture>
-					</div>
-					<div data-fls-popup-content="" class="announcementbar-popup__content content-announcementbar">
-						<div class="content-announcementbar__head">
-							<a href="#!" class="content-announcementbar__logo">
-								<picture>
-									<img alt="Image" src="./assets/img/popups/sign-up-popup/logo-popup.webp">
-								</picture>
-							</a>
-							<button data-fls-popup-close="" type="button" class="content-announcementbar__close content-announcementbar__close--icon-close">close</button>
-						</div>
-						<div class="content-announcementbar__body">
-							<h2 class="content-announcementbar__title">
-								Want to save
-								<span class="content-announcementbar__title--discount">15%</span>
-								<br>
-								on your first order?
-							</h2>
-							<div class="content-announcementbar__text">
-								<p>
-									Sign up here and take part in something truly special, receive exclusive offers, updates, new arrivals and
-              inspiration. Unsubscribe any time.
-								</p>
-							</div>
-						</div>
-						<form class="content-announcementbar__form" action="files/sendmail/sendmail.php" method="POST">
-							<input type="text" name="form[email]" data-error="Error" placeholder="Enter your email" class="content-announcementbar__input">
-							<button data-fls-button="" type="submit" class="content-announcementbar__button button button--popup-sign-up">SIGN UP</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div data-fls-popup="popup-notify" aria-hidden="true" class="notify-popup">
-			<div data-fls-popup-wrapper="" class="notify-popup__wrapper">
-				<div data-fls-popup-body="" class="notify-popup__body">
-					<div class="notify-popup__head">
-						<button data-fls-popup-close="" type="button" class="notify-popup__close notify-popup__close--icon-close">close</button>
-					</div>
-					<div data-fls-popup-content="" class="notify-popup__content">
-						<div class="notify-popup__icon--icon-sun"></div>
-						<h2 class="notify-popup__title title--mid">Notify me</h2>
-						<form class="notify-popup__form" action="files/sendmail/sendmail.php" method="POST">
-							<div class="notify-popup__email-send">
-								<input type="text" name="form[email]" data-error="Error" placeholder="Enter your email" class="notify-popup__input">
-								<button data-fls-button="" class="notify-popup__button button button--send" type="submit">Send</button>
-							</div>
-							<label class="notify-popup__agreement">
-								<input type="checkbox" name="agreement" value="yes" class="notify-popup__checkbox" required>
-								<span class="notify-popup__checkbox-custom"></span>
-								<span class="notify-popup__agreement-text text">Sign up to receive our updates, new arrivals and inspiration</span>
-							</label>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div data-fls-popup="popup-pre-order" aria-hidden="true" class="pre-order-popup">
-			<div data-fls-popup-wrapper="" class="pre-order-popup__wrapper">
-				<div data-fls-popup-body="" class="pre-order-popup__body">
-					<div class="pre-order-popup__action">
-						<button data-fls-popup-close="" type="button" class="pre-order-popup__close pre-order-popup__close--icon-close">close</button>
-					</div>
-					<div data-fls-popup-content="" class="pre-order-popup__content content-pre-order">
-						<div class="content-pre-order__head">
-							<div class="content-pre-order--icon-kite"></div>
-							<h2 class="content-pre-order__title title--mid">Shipping</h2>
-						</div>
-						<div class="content-pre-order__body">
-							<div class="content-pre-order__greetings">Hi There!</div>
-							<div class="content-pre-order__text text">
-								<p>
-									Please, note that due to a huge demand, we ran out of stock of thais model. Apologies about it! You can
-              pre-order it now to assure a pair. Next delivery will be very very soon.
-								</p>
-							</div>
-						</div>
-						<div class="content-pre-order__bottom">
-							<button data-fls-popup-close="" data-fls-button="" class="content-pre-order__button button button--pre-order">
-								<span class="button__text button__text--beige-popup">CANCEL</span>
-								<span class="button__icon button__icon--beige-popup --icon-arrow-right"></span>
-							</button>
-							<button data-fls-button="" class="content-pre-order__button button">
-								<span class="button__text button__text--brown">ACCEPT</span>
-								<span class="button__icon button__icon--brown --icon-arrow-right"></span>
-							</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div data-fls-popup="popup-materials" aria-hidden="true" class="materials-popup">
-			<div data-fls-popup-wrapper="" class="materials-popup__wrapper">
-				<div data-fls-popup-body="" class="materials-popup__body">
-					<div class="materials-popup__image">
-						<button data-fls-popup-close="" type="button" class="materials-popup__close materials-popup__close--icon-close"></button>
-						<picture>
-							<img class="materials-popup__image--img" alt="Image" src="./assets/img/popups/materials-popup/field-popup.webp">
-						</picture>
-					</div>
-					<div data-fls-popup-content="" class="materials-popup__content content-materials">
-						<div class="content-materials__head">
-							<div class="content-materials__eyebrow eyebrow">In nature we trust</div>
-							<h2 class="content-materials__title title--popup">
-								Sustainable
-								<br>
-								Materials
-							</h2>
-						</div>
-						<div class="content-materials__text text">
-							<p>
-								More than 98% of the materials used in this product are proven to be sustainable or eco-friendly.
-							</p>
-						</div>
-						<div class="content-materials__certificates certificates">
-							<div class="certificates__label">Certificates</div>
-							<div class="certificates__items">
-								<div class="certificates__item">
-									<picture>
-										<img alt="Image" src="./assets/img/popups/conditions-popup/gots-logo.webp">
-									</picture>
-								</div>
-								<div class="certificates__item">
-									<picture>
-										<img alt="Image" src="./assets/img/popups/materials-popup/oeko-logo.webp">
-									</picture>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div data-fls-popup="popup-conditions" aria-hidden="true" class="conditions-popup">
-			<div data-fls-popup-wrapper="" class="conditions-popup__wrapper">
-				<div data-fls-popup-body="" class="conditions-popup__body">
-					<div class="conditions-popup__image">
-						<button data-fls-popup-close="" type="button" class="conditions-popup__close conditions-popup__close--icon-close"></button>
-						<picture>
-							<img class="conditions-popup__image--img" alt="Image" src="./assets/img/popups/conditions-popup/manufacturing.webp">
-						</picture>
-					</div>
-					<div data-fls-popup-content="" class="conditions-popup__content content-conditions">
-						<div class="content-conditions__head">
-							<div class="content-conditions__eyebrow eyebrow">we care about people</div>
-							<h2 class="content-conditions__title title--popup">
-								Fair Working
-								<br>
-								Conditions
-							</h2>
-						</div>
-						<div class="content-conditions__text text">
-							<p>
-								Good management practices are implemented to ensure and continuously improve the working conditions of
-            factory workers and all employees.
-							</p>
-						</div>
-						<div class="content-conditions__certificates certificates">
-							<div class="certificates__label">Certificates</div>
-							<div class="certificates__items">
-								<div class="certificates__item">
-									<picture>
-										<img alt="Image" src="./assets/img/popups/conditions-popup/gots-logo.webp">
-									</picture>
-								</div>
-								<div class="certificates__item">
-									<picture>
-										<img alt="Image" src="./assets/img/popups/conditions-popup/fairtrade-logo.webp">
-									</picture>
-								</div>
-								<div class="certificates__item">
-									<picture>
-										<img alt="Image" src="./assets/img/popups/conditions-popup/organic-logo.webp">
-									</picture>
-								</div>
-								<div class="certificates__item">
-									<picture>
-										<img alt="Image" src="./assets/img/popups/conditions-popup/grs-logo.webp">
-									</picture>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div data-fls-popup="popup-product" aria-hidden="true" class="product-popup">
-			<div data-fls-popup-wrapper="" class="product-popup__wrapper">
-				<div data-fls-popup-body="" class="product-popup__body">
-					<div class="product-popup__image">
-						<button data-fls-popup-close="" type="button" class="product-popup__close product-popup__close--icon-close"></button>
-						<picture>
-							<img class="product-popup__image--img" alt="Image" src="./assets/img/popups/product-popup/boy-sudying-map.webp">
-						</picture>
-					</div>
-					<div data-fls-popup-content="" class="product-popup__content product-content">
-						<div class="product-content__head">
-							<div class="product-content__eyebrow eyebrow">WHERE I CAME FROM</div>
-							<h2 class="product-content__title title--popup">Product’s journey</h2>
-						</div>
-						<div class="product-content__body body-conditions">
-							<div class="body-conditions__eyebrow eyebrow">steps and processes</div>
-							<ul class="body-conditions__list">
-								<li class="body-conditions__item">
-									<div class="body-conditions__block">
-										<div class="body-conditions__label">Raw materials processing</div>
-										<div class="body-conditions__text">Refining and supplying material.</div>
-									</div>
-								</li>
-								<li class="body-conditions__item">
-									<div class="body-conditions__block">
-										<div class="body-conditions__label">Yarn processing</div>
-										<div class="body-conditions__text">Spinning raw material into yarn.</div>
-									</div>
-								</li>
-								<li class="body-conditions__item">
-									<div class="body-conditions__block">
-										<div class="body-conditions__label">Fabric processing</div>
-										<div class="body-conditions__text">Processing and turning yarn into fabric.</div>
-									</div>
-								</li>
-								<li class="body-conditions__item">
-									<div class="body-conditions__block">
-										<div class="body-conditions__label">Manufacturing</div>
-										<div class="body-conditions__text">The different manufacturing steps and processes.</div>
-									</div>
-								</li>
-								<li class="body-conditions__item">
-									<div class="body-conditions__block">
-										<div class="body-conditions__label">Tree House</div>
-										<div class="body-conditions__text">Design and sale of the product.</div>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div data-fls-popup="popup-size" aria-hidden="true" class="size-popup">
-			<div data-fls-popup-wrapper="" class="size-popup__wrapper">
-				<div data-fls-popup-body="" class="size-popup__body">
-					<div class="size-popup__button">
-						<button data-fls-popup-close="" type="button" class="size-popup__close size-popup__close--icon-close"></button>
-					</div>
-					<div data-fls-popup-content="" class="size-popup__content content-size">
-						<div class="content-size__icon">
-							<img src="./assets/img/popups/rainbow.svg" alt="Icon rainbow">
-						</div>
-						<table class="content-size__table size-guide">
-							<thead class="size-guide__head">
-								<tr class="size-guide__head-row">
-									<th class="size-guide__title">Size</th>
-									<th class="size-guide__title">Height</th>
-									<th class="size-guide__title">Chest</th>
-									<th class="size-guide__title">Waist</th>
-								</tr>
-							</thead>
-							<tbody class="size-guide__body">
-								<tr class="size-guide__row">
-									<td class="size-guide__item">2T-3T</td>
-									<td class="size-guide__item">98 cm</td>
-									<td class="size-guide__item">66-70 cm</td>
-									<td class="size-guide__item">53 cm</td>
-								</tr>
-								<tr class="size-guide__row">
-									<td class="size-guide__item">4T-5T</td>
-									<td class="size-guide__item">110 cm</td>
-									<td class="size-guide__item">71-75 cm</td>
-									<td class="size-guide__item">56 cm</td>
-								</tr>
-								<tr class="size-guide__row">
-									<td class="size-guide__item">5Y-6Y</td>
-									<td class="size-guide__item">115 cm</td>
-									<td class="size-guide__item">76-80 cm</td>
-									<td class="size-guide__item">58 cm</td>
-								</tr>
-								<tr class="size-guide__row">
-									<td class="size-guide__item">6Y-7Y</td>
-									<td class="size-guide__item">120 cm</td>
-									<td class="size-guide__item">81-99 cm</td>
-									<td class="size-guide__item">61 cm</td>
-								</tr>
-								<tr class="size-guide__row">
-									<td class="size-guide__item">7Y-8Y</td>
-									<td class="size-guide__item">120 cm</td>
-									<td class="size-guide__item">81-99 cm</td>
-									<td class="size-guide__item">61 cm</td>
-								</tr>
-								<tr class="size-guide__row">
-									<td class="size-guide__item">8Y-9Y</td>
-									<td class="size-guide__item">120 cm</td>
-									<td class="size-guide__item">81-99 cm</td>
-									<td class="size-guide__item">61 cm</td>
-								</tr>
-								<tr class="size-guide__row">
-									<td class="size-guide__item">9Y-10Y</td>
-									<td class="size-guide__item">120 cm</td>
-									<td class="size-guide__item">81-99 cm</td>
-									<td class="size-guide__item">61 cm</td>
-								</tr>
-							</tbody>
-						</table>
-						<div class="content-size__bottom">
-							<div class="content-size__text text">
-								<p>
-									This size chart is a starting point, individual fit preferences may vary. For best fit at time of
-              purchase, use your current measurements.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 		<div class="wrapper">
-			<header data-fls-header="" class="header header--transparent header--absolute">
-				<div class="header__container">
-					<a href="#!" class="header__logo">
-						<picture>
-							<img class="header__logo--pc" alt="Logo company Tree House" src="./assets/img/logo.webp">
-						</picture>
-						<picture>
-							<img class="header__logo--mob" alt="Logo company Tree House" src="./assets/img/logo-mob.webp">
-						</picture>
-					</a>
-					<div class="header__menu menu">
-						<button type="button" data-fls-menu="" class="menu__icon icon-menu" aria-label="Toggle menu">
-							<span></span>
-						</button>
-						<nav class="menu__body">
-							<ul class="menu__list">
-								<li class="menu__item">
-									<button type="button" data-toggle="shop" class="menu__link menu__link--shop">Shop +</button>
-									<ul class="menu__mob-sublist mob-sublist style-submenu">
-										<li class="mob-sublist__subitem mob-sublist__subitem--has-children">
-											<button class="mob-sublist__sub-button style-submenu__category" data-toggle="tops">
-												Tops
-												<span class="mob-sublist__subbutton--icon-arrow-right"></span>
-											</button>
-											<ul class="mob-sublist__child">
-												<li>
-													<a class="mob-sublist__sub-link style-submenu__subcategory" href="#!">Shirts</a>
-												</li>
-												<li>
-													<a class="mob-sublist__sub-link style-submenu__subcategory" href="#!">T-shirts</a>
-												</li>
-											</ul>
-										</li>
-										<li class="mob-sublist__subitem mob-sublist__subitem--has-children">
-											<button class="mob-sublist__sub-button style-submenu__category" data-toggle="bottoms">
-												Bottoms
-												<span class="mob-sublist__subbutton--icon-arrow-right"></span>
-											</button>
-											<ul class="mob-sublist__child">
-												<li>
-													<a class="mob-sublist__sub-link style-submenu__subcategory" href="#!">Pants</a>
-												</li>
-												<li>
-													<a class="mob-sublist__sub-link style-submenu__subcategory" href="#!">Shorts</a>
-												</li>
-											</ul>
-										</li>
-										<li>
-											<a href="#!" class="mob-sublist__sub-button style-submenu__category">
-												Roompers
-												<span class="mob-sublist__subbutton--icon-arrow-right"></span>
-											</a>
-										</li>
-										<li>
-											<a href="#!" class="mob-sublist__sub-button style-submenu__category">
-												Hats
-												<span class="mob-sublist__subbutton--icon-arrow-right"></span>
-											</a>
-										</li>
-										<li>
-											<a href="#!" class="mob-sublist__sub-button style-submenu__category">
-												Shop all
-												<span class="mob-sublist__subbutton--icon-arrow-right"></span>
-											</a>
-										</li>
-									</ul>
-								</li>
-								<li class="menu__item">
-									<a href="#!" class="menu__link">Our team</a>
-								</li>
-								<li class="menu__item">
-									<a href="#!" class="menu__link">Our impact</a>
-								</li>
-								<li class="menu__item">
-									<a href="#!" class="menu__link">Gift card</a>
-								</li>
-								<li class="menu__item">
-									<a href="#!" class="menu__link">FAQ</a>
-								</li>
-								<li class="menu__item">
-									<a href="#!" class="menu__link">Journal</a>
-								</li>
-								<li class="menu__item">
-									<a href="#!" class="menu__link">Contacts</a>
-								</li>
-							</ul>
-							<div class="menu__submenu submenu">
-								<div class="submenu__background">
-									<div class="submenu__background--inner">
-										<div class="submenu__bg-leaf">
-											<picture>
-												<img alt="Image" src="./assets/img/header/menu-shop/shop-menu-leaf.webp">
-											</picture>
-										</div>
-										<div class="submenu__container">
-											<div class="submenu__head">
-												<a href="#!" class="submenu__logo">
-													<picture>
-														<img alt="Image" src="./assets/img/logo-mob.webp">
-													</picture>
+			<header data-fls-header="" data-fls-watcher="" data-fls-watcher-once="" class="header header--transparent header--absolute">
+				<section data-fls-announcementbar="" class="announcementbar">
+					<div class="announcementbar__container">
+						<div class="announcementbar__offers">
+							<a href="#!" class="announcementbar__offer">Get 25% off buying the entire capsule collection</a>
+							<div class="announcementbar__line"></div>
+							<a href="#!" data-fls-popup-link="popup-announcementbar" class="announcementbar__offer">Subscribe to us and get 15% off your first order</a>
+						</div>
+					</div>
+				</section>
+				<div class="header__wrapper header-wrapper--main">
+					<div class="header__container">
+						<a href="#!" class="header__logo">
+							<picture>
+								<img class="header__logo--pc" alt="Logo company Tree House" src="./assets/img/logo.webp">
+							</picture>
+							<picture>
+								<img class="header__logo--mob" alt="Logo company Tree House" src="./assets/img/logo-mob.webp">
+							</picture>
+						</a>
+						<div class="header__menu menu">
+							<button type="button" data-fls-menu="" class="menu__icon icon-menu" aria-label="Toggle menu">
+								<span></span>
+							</button>
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<button type="button" data-toggle="shop" class="menu__link menu__link--shop">
+											Shop
+											<span class="menu__link--plus">+</span>
+										</button>
+										<ul class="menu__mob-sublist mob-sublist style-submenu">
+											<li class="mob-sublist__subitem mob-sublist__subitem--has-children">
+												<button class="mob-sublist__sub-button style-submenu__category" data-toggle="tops">
+													Tops
+													<span class="mob-sublist__subbutton--icon-arrow-right"></span>
+												</button>
+												<ul class="mob-sublist__child">
+													<li>
+														<a class="mob-sublist__sub-link style-submenu__subcategory" href="#!">Shirts</a>
+													</li>
+													<li>
+														<a class="mob-sublist__sub-link style-submenu__subcategory" href="#!">T-shirts</a>
+													</li>
+												</ul>
+											</li>
+											<li class="mob-sublist__subitem mob-sublist__subitem--has-children">
+												<button class="mob-sublist__sub-button style-submenu__category" data-toggle="bottoms">
+													Bottoms
+													<span class="mob-sublist__subbutton--icon-arrow-right"></span>
+												</button>
+												<ul class="mob-sublist__child">
+													<li>
+														<a class="mob-sublist__sub-link style-submenu__subcategory" href="#!">Pants</a>
+													</li>
+													<li>
+														<a class="mob-sublist__sub-link style-submenu__subcategory" href="#!">Shorts</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="#!" class="mob-sublist__sub-button style-submenu__category">
+													Roompers
+													<span class="mob-sublist__subbutton--icon-arrow-right"></span>
 												</a>
-												<button class="submenu__close submenu__close--icon-close">close</button>
+											</li>
+											<li>
+												<a href="#!" class="mob-sublist__sub-button style-submenu__category">
+													Hats
+													<span class="mob-sublist__subbutton--icon-arrow-right"></span>
+												</a>
+											</li>
+											<li>
+												<a href="#!" class="mob-sublist__sub-button style-submenu__category">
+													Shop all
+													<span class="mob-sublist__subbutton--icon-arrow-right"></span>
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li class="menu__item">
+										<a href="#!" class="menu__link">Our team</a>
+									</li>
+									<li class="menu__item">
+										<a href="#!" class="menu__link">Our impact</a>
+									</li>
+									<li class="menu__item">
+										<a href="#!" class="menu__link">Gift card</a>
+									</li>
+									<li class="menu__item">
+										<a href="#!" class="menu__link">FAQ</a>
+									</li>
+									<li class="menu__item">
+										<a href="#!" class="menu__link">Journal</a>
+									</li>
+									<li class="menu__item">
+										<a href="#!" class="menu__link">Contacts</a>
+									</li>
+								</ul>
+								<div data-fls-parallax-cursor-parent="" data-fls-parallax-smooth="10" class="menu__submenu submenu">
+									<div class="submenu__background">
+										<div class="submenu__background--inner">
+											<div data-fls-parallax-cursor="" data-axis="tilt" data-fls-parallax-coefficient="25" data-fls-parallax-direction="-" class="submenu__bg-leaf">
+												<picture>
+													<img alt="Image" src="./assets/img/header/menu-shop/shop-menu-leaf.webp">
+												</picture>
 											</div>
-											<div class="submenu__body">
-												<div class="submenu__columns">
-													<div class="submenu__column column-categories">
-														<div class="column-categories__category">
-															<ul class="column-categories__list">
-																<li class="column-categories__item">
-																	<button data-category="tops" data-image="tops" class="column-categories__link style-submenu__category">
-																		Tops
-																		<span class="column-categories__link--icon-arrow-right"></span>
-																	</button>
-																	<ul class="column-categories__sublist goods">
-																		<li class="goods__item">
-																			<a href="#!" data-parent="tops" data-image="shirts" class="goods__link style-submenu__subcategory">SHIRTS</a>
-																		</li>
-																		<li class="goods__item">
-																			<a href="#!" data-parent="tops" data-image="t-shirts" class="goods__link style-submenu__subcategory">T-SHIRTS</a>
-																		</li>
-																	</ul>
-																</li>
-																<li class="column-categories__item">
-																	<button data-category="bottoms" data-image="bottoms" class="column-categories__link style-submenu__category">
-																		Bottoms
-																		<span class="column-categories__link--icon-arrow-right"></span>
-																	</button>
-																	<ul class="column-categories__sublist goods">
-																		<li class="goods__item">
-																			<a href="#!" data-parent="bottoms" data-image="pants" class="goods__link style-submenu__subcategory">PANTS</a>
-																		</li>
-																		<li class="goods__item">
-																			<a href="#!" data-parent="bottoms" data-image="shorts" class="goods__link style-submenu__subcategory">SHORTS</a>
-																		</li>
-																	</ul>
-																</li>
-																<li class="column-categories__item">
-																	<button data-image="roompers" class="column-categories__link style-submenu__category">
-																		Roompers
-																		<span class="column-categories__link--icon-arrow-right"></span>
-																	</button>
-																</li>
-																<li class="column-categories__item">
-																	<button data-image="hats" class="column-categories__link style-submenu__category">
-																		Hats
-																		<span class="column-categories__link--icon-arrow-right"></span>
-																	</button>
-																</li>
-																<li class="column-categories__item">
-																	<button data-image="shop-all" class="column-categories__link style-submenu__category">
-																		<span class="column-categories__link--content">
-																			Shop all
-																			<span class="column-categories__link--text">collections</span>
-																		</span>
-																		<span class="column-categories__link--icon-arrow-right"></span>
-																	</button>
-																</li>
-															</ul>
+											<div class="submenu__container">
+												<div class="submenu__head">
+													<a href="#!" class="submenu__logo">
+														<picture>
+															<img alt="Image" src="./assets/img/logo-mob.webp">
+														</picture>
+													</a>
+													<button class="submenu__close submenu__close--icon-close">close</button>
+												</div>
+												<div class="submenu__body">
+													<div class="submenu__columns">
+														<div class="submenu__column column-categories">
+															<div class="column-categories__category">
+																<ul class="column-categories__list">
+																	<li class="column-categories__item">
+																		<button data-category="tops" data-image="tops" class="column-categories__link style-submenu__category">
+																			Tops
+																			<span class="column-categories__link--icon-arrow-right"></span>
+																		</button>
+																		<ul class="column-categories__sublist goods">
+																			<li class="goods__item">
+																				<a href="#!" data-parent="tops" data-image="shirts" class="goods__link style-submenu__subcategory">SHIRTS</a>
+																			</li>
+																			<li class="goods__item">
+																				<a href="#!" data-parent="tops" data-image="t-shirts" class="goods__link style-submenu__subcategory">T-SHIRTS</a>
+																			</li>
+																		</ul>
+																	</li>
+																	<li class="column-categories__item">
+																		<button data-category="bottoms" data-image="bottoms" class="column-categories__link style-submenu__category">
+																			Bottoms
+																			<span class="column-categories__link--icon-arrow-right"></span>
+																		</button>
+																		<ul class="column-categories__sublist goods">
+																			<li class="goods__item">
+																				<a href="#!" data-parent="bottoms" data-image="pants" class="goods__link style-submenu__subcategory">PANTS</a>
+																			</li>
+																			<li class="goods__item">
+																				<a href="#!" data-parent="bottoms" data-image="shorts" class="goods__link style-submenu__subcategory">SHORTS</a>
+																			</li>
+																		</ul>
+																	</li>
+																	<li class="column-categories__item">
+																		<button data-image="roompers" class="column-categories__link style-submenu__category">
+																			Roompers
+																			<span class="column-categories__link--icon-arrow-right"></span>
+																		</button>
+																	</li>
+																	<li class="column-categories__item">
+																		<button data-image="hats" class="column-categories__link style-submenu__category">
+																			Hats
+																			<span class="column-categories__link--icon-arrow-right"></span>
+																		</button>
+																	</li>
+																	<li class="column-categories__item">
+																		<button data-image="shop-all" class="column-categories__link style-submenu__category">
+																			<span class="column-categories__link--content">
+																				Shop all
+																				<span class="column-categories__link--text">collections</span>
+																			</span>
+																			<span class="column-categories__link--icon-arrow-right"></span>
+																		</button>
+																	</li>
+																</ul>
+															</div>
 														</div>
-													</div>
-													<div class="submenu__column column-media">
-														<div class="column-media__wrapper">
-															<picture>
-																<img class="column-media__image column-media__image--tops" alt="Image" src="./assets/img/header/menu-shop/tops.webp">
-															</picture>
-															<picture>
-																<img class="column-media__image column-media__image--bottoms" alt="Image" src="./assets/img/header/menu-shop/bottoms.webp">
-															</picture>
-															<picture>
-																<img class="column-media__image column-media__image--roompers" alt="Image" src="./assets/img/header/menu-shop/roompers.webp">
-															</picture>
-															<picture>
-																<img class="column-media__image column-media__image--hats" alt="Image" src="./assets/img/header/menu-shop/hats.webp">
-															</picture>
-															<picture>
-																<img class="column-media__image column-media__image--shop-all" alt="Image" src="./assets/img/header/menu-shop/shop-all.webp">
-															</picture>
-															<picture>
-																<img class="column-media__image column-media__image--shirts" alt="Image" src="./assets/img/header/menu-shop/shirts.webp">
-															</picture>
-															<picture>
-																<img class="column-media__image column-media__image--t-shirts" alt="Image" src="./assets/img/header/menu-shop/t-shirts.webp">
-															</picture>
-															<picture>
-																<img class="column-media__image column-media__image--pants" alt="Image" src="./assets/img/header/menu-shop/pants.webp">
-															</picture>
-															<picture>
-																<img class="column-media__image column-media__image--shorts" alt="Image" src="./assets/img/header/menu-shop/shorts.webp">
-															</picture>
+														<div class="submenu__column column-media">
+															<div class="column-media__wrapper">
+																<picture>
+																	<img class="column-media__image column-media__image--tops" alt="Image" src="./assets/img/header/menu-shop/tops.webp">
+																</picture>
+																<picture>
+																	<img class="column-media__image column-media__image--bottoms" alt="Image" src="./assets/img/header/menu-shop/bottoms.webp">
+																</picture>
+																<picture>
+																	<img class="column-media__image column-media__image--roompers" alt="Image" src="./assets/img/header/menu-shop/roompers.webp">
+																</picture>
+																<picture>
+																	<img class="column-media__image column-media__image--hats" alt="Image" src="./assets/img/header/menu-shop/hats.webp">
+																</picture>
+																<picture>
+																	<img class="column-media__image column-media__image--shop-all" alt="Image" src="./assets/img/header/menu-shop/shop-all.webp">
+																</picture>
+																<picture>
+																	<img class="column-media__image column-media__image--shirts" alt="Image" src="./assets/img/header/menu-shop/shirts.webp">
+																</picture>
+																<picture>
+																	<img class="column-media__image column-media__image--t-shirts" alt="Image" src="./assets/img/header/menu-shop/t-shirts.webp">
+																</picture>
+																<picture>
+																	<img class="column-media__image column-media__image--pants" alt="Image" src="./assets/img/header/menu-shop/pants.webp">
+																</picture>
+																<picture>
+																	<img class="column-media__image column-media__image--shorts" alt="Image" src="./assets/img/header/menu-shop/shorts.webp">
+																</picture>
+															</div>
 														</div>
 													</div>
 												</div>
-											</div>
-											<div class="submenu__bottom">
-												<div class="submenu__help help">
-													<a href="#!" class="help__link">Delivery & return</a>
-													<a href="#!" class="help__link">Contacts</a>
+												<div class="submenu__bottom">
+													<div class="submenu__help help">
+														<a href="#!" class="help__link">Delivery & return</a>
+														<a href="#!" class="help__link">Contacts</a>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
+							</nav>
+						</div>
+						<div class="header__actions">
+							<div class="header__search">
+								<div class="header__search-icon">
+									<div class="header__search-glass"></div>
+									<div class="header__search-handle"></div>
+								</div>
+								<input class="header__search-input" type="text" placeholder="Search...">
 							</div>
-						</nav>
-					</div>
-					<div class="header__actions">
-						<div class="header__search header__search--icon-search"></div>
-						<div class="header__cart header__cart--icon-shopping-bag"></div>
+							<div class="header__cart header__cart--icon-shopping-bag">
+								<div class="header__cart-preview">
+									<div class="header__cart-empty">Your cart is empty</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</header>
 			<main class="page">
 				<div data-fls-main="" class="main">
 					<section class="main__hero hero">
-						<div class="hero__container">
-							<div class="hero__body">
-								<div class="hero__content content-hero">
-									<div class="content-hero__eyebrow eyebrow">Treehouse:</div>
-									<h1 class="content-hero__title title">
-										<span class="content-hero__title--up">Little Clothes.</span>
-										<span class="content-hero__title--down">Big Impact.</span>
-									</h1>
-									<div class="content-hero__text text">
-										<p>
-											High-quality children's clothing, crafted with care from sustainable materials that are kind to the
-              planet. These timeless styles are the perfect companions for your little adventurer, wherever their
-              imagination takes them.
-										</p>
+						<div class="hero__main-wrapper">
+							<div class="hero__wrapper">
+								<div class="hero__container">
+									<div data-fls-watcher="" data-fls-watcher-once="" class="hero__block">
+										<div class="hero__body">
+											<div class="hero__content content-hero">
+												<div class="content-hero__eyebrow eyebrow">Treehouse:</div>
+												<h1 class="content-hero__title title">
+													<span class="content-hero__title--up">Little Clothes.</span>
+													<span class="content-hero__title--down">Big Impact.</span>
+												</h1>
+												<div class="content-hero__text text">
+													<p>
+														High-quality children's clothing, crafted with care from sustainable materials that are kind to the
+                    planet. These timeless styles are the perfect companions for your little adventurer, wherever their
+                    imagination takes them.
+													</p>
+												</div>
+												<div class="content-hero__action">
+													<a data-fls-button="" href="#!" class="content-hero__button button">
+														<span class="button__text button__text--brown">SHOP NOW</span>
+														<span class="button__icon button__icon--brown --icon-arrow-right"></span>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="hero__hint hint-hero">
+											<div class="hint-hero__slogan">* Buy good, do good</div>
+											<a href="" data-fls-scrollto=".welcome" class="hint-hero__scroll hint-hero__scroll--icon-arrow-down">Scroll</a>
+										</div>
 									</div>
-									<div class="content-hero__action">
-										<a data-fls-button="" href="#!" class="content-hero__button button">
-											<span class="button__text button__text--brown">SHOP NOW</span>
-											<span class="button__icon button__icon--brown --icon-arrow-right"></span>
-										</a>
+								</div>
+								<div class="hero__background">
+									<div class="hero__background--inner">
+										<picture>
+											<source media="(max-width: 1200px)" srcset="./assets/img/main-page/section-hero/hero-bg-1200.webp" type="image/webp">
+											<source media="(max-width: 600px)" srcset="./assets/img/main-page/section-hero/hero-bg- 600.webp" type="image/webp">
+											<source media="(max-width: 400px)" srcset="./assets/img/main-page/section-hero/hero-bg- 400.webp" type="image/webp">
+											<img class="hero__background--image" alt="A boy at the tree house" src="./assets/img/main-page/section-hero/hero-bg.webp">
+										</picture>
 									</div>
 								</div>
 							</div>
-							<div class="hero__hint hint-hero">
-								<div class="hint-hero__slogan">* Buy good, do good</div>
-								<div class="hint-hero__scroll hint-hero__scroll--icon-arrow-down">Scroll</div>
-							</div>
 						</div>
-						<div class="hero__background">
-							<div class="hero__background--inner">
-								<picture>
-									<source media="(max-width: 1200px)" srcset="./assets/img/main-page/section-hero/hero-bg-1200.webp" type="image/webp">
-									<source media="(max-width: 600px)" srcset="./assets/img/main-page/section-hero/hero-bg- 600.webp" type="image/webp">
-									<source media="(max-width: 400px)" srcset="./assets/img/main-page/section-hero/hero-bg- 400.webp" type="image/webp">
-									<img class="hero__background--image" alt="A boy at the tree house" src="./assets/img/main-page/section-hero/hero-bg.webp">
-								</picture>
-							</div>
-						</div>
+						<div class="hero__spacer"></div>
 					</section>
-					<section class="main__welcome welcome">
-						<div class="welcome__container">
+					<section data-fls-parallax-cursor-parent="" data-fls-parallax-smooth="10" class="main__welcome welcome">
+						<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.5" class="welcome__container">
 							<div class="welcome__body">
-								<div class="welcome__media media">
-									<div class="media__image-tree">
+								<div data-fls-parallax-parent="" data-fls-parallax-smooth="10" class="welcome__media media">
+									<div data-fls-parallax="" data-fls-parallax-coefficient="18" class="media__image-tree">
 										<picture>
-											<img alt="Image" src="./assets/img/main-page/section-welcome/tree.webp">
+											<img class="media__tree-image" alt="Image" src="./assets/img/main-page/section-welcome/tree.webp">
 										</picture>
 									</div>
-									<div class="media__image-child">
+									<div data-fls-parallax-cursor="" data-axis="tilt" data-fls-parallax-coefficient="25" data-fls-parallax-direction="-" class="media__image-child">
 										<picture>
-											<img alt="Image" src="./assets/img/main-page/section-welcome/child.webp">
+											<img class="media__child-image" alt="Image" src="./assets/img/main-page/section-welcome/child.webp">
 										</picture>
 									</div>
-									<div class="media__image-leaf">
+									<div data-fls-parallax-cursor="" data-axis="tilt" data-fls-parallax-coefficient="45" data-fls-parallax-direction="-" class="media__image-leaf">
 										<picture>
-											<img alt="Image" src="./assets/img/main-page/section-welcome/leaf-welcome.webp">
+											<img class="media__leaf-image" alt="Image" src="./assets/img/main-page/section-welcome/leaf-welcome.webp">
 										</picture>
 									</div>
 									<div class="media__company">TreeHouse</div>
@@ -647,11 +346,7 @@
 								<div class="welcome__content content-welcome">
 									<div class="content-welcome__block blockhead">
 										<div class="content-welcome__eyebrow eyebrow">welcome</div>
-										<h2 class="content-welcome__title title--mid">
-											Hi, meet
-											<br>
-											TreeHouse.
-										</h2>
+										<h2 class="content-welcome__title title--mid">Hi, meet TreeHouse.</h2>
 										<div class="content-welcome__text text">
 											<p>
 												Mindfully crafted gender-neutral children's clothing focused on your little one and designed with great
@@ -669,7 +364,7 @@
 					</section>
 					<section class="main__priorities priorities">
 						<div class="priorities__container">
-							<div class="priorities__columns">
+							<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.5" class="priorities__columns">
 								<div class="priorities__column column-priorities">
 									<div class="column-priorities__head blockhead">
 										<div class="column-priorities__eyebrow eyebrow">Our care</div>
@@ -702,7 +397,7 @@
 											</div>
 										</div>
 									</div>
-									<div data-fls-watcher="" data-fls-watcher-threshold="0.2" class="column-priorities__media-wrapper media-wrapper">
+									<div class="column-priorities__media-wrapper media-wrapper">
 										<div class="media-wrapper__image">
 											<picture>
 												<img alt="Image" src="./assets/img/main-page/section-priorities/shutterstock.webp">
@@ -774,13 +469,13 @@
 						</div>
 					</section>
 					<section class="main__categories categories">
-						<div class="categories__container">
+						<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.2" class="categories__container">
 							<div class="categories__head blockhead">
 								<div class="categories__eyebrow eyebrow">let’s make shopping</div>
 								<h2 class="categories__title title--mid">What are you looking for?</h2>
 							</div>
-							<div class="categories__body body-pc">
-								<div data-fls-watcher="" data-fls-watcher-threshold="0.2" class="categories__media media-categories">
+							<div data-fls-watcher="" data-fls-watcher-threshold="0.2" class="categories__body body-pc">
+								<div class="categories__media media-categories">
 									<picture>
 										<source media="(max-width: 600px)" srcset="./assets/img/main-page/section-categories/tops-600.webp" type="image/webp">
 										<source media="(max-width: 1200px)" srcset="./assets/img/main-page/section-categories/tops-1200.webp" type="image/webp">
@@ -833,7 +528,7 @@
 													<picture>
 														<source media="(max-width: 600px)" srcset="./assets/img/main-page/section-categories/tops-600.webp" type="image/webp">
 														<source media="(max-width: 1200px)" srcset="./assets/img/main-page/section-categories/tops-1200.webp" type="image/webp">
-														<img alt="Image" src="./assets/img/main-page/section-categories/tops.webp">
+														<img class="slide-body-touch__media-image" alt="Image" src="./assets/img/main-page/section-categories/tops.webp">
 													</picture>
 												</div>
 											</div>
@@ -845,7 +540,7 @@
 													<picture>
 														<source media="(max-width: 600px)" srcset="./assets/img/main-page/section-categories/bottoms-600.webp" type="image/webp">
 														<source media="(max-width: 1200px)" srcset="./assets/img/main-page/section-categories/bottoms-1200.webp" type="image/webp">
-														<img alt="Image" src="./assets/img/main-page/section-categories/bottoms.webp">
+														<img class="slide-body-touch__media-image" alt="Image" src="./assets/img/main-page/section-categories/bottoms.webp">
 													</picture>
 												</div>
 											</div>
@@ -857,7 +552,7 @@
 													<picture>
 														<source media="(max-width: 600px)" srcset="./assets/img/main-page/section-categories/roompers-600.webp" type="image/webp">
 														<source media="(max-width: 1200px)" srcset="./assets/img/main-page/section-categories/roompers-1200.webp" type="image/webp">
-														<img alt="Image" src="./assets/img/main-page/section-categories/roompers.webp">
+														<img class="slide-body-touch__media-image" alt="Image" src="./assets/img/main-page/section-categories/roompers.webp">
 													</picture>
 												</div>
 											</div>
@@ -869,7 +564,7 @@
 													<picture>
 														<source media="(max-width: 600px)" srcset="./assets/img/main-page/section-categories/hats-600.webp" type="image/webp">
 														<source media="(max-width: 1200px)" srcset="./assets/img/main-page/section-categories/hats-1200.webp" type="image/webp">
-														<img alt="Image" src="./assets/img/main-page/section-categories/hats.webp">
+														<img class="slide-body-touch__media-image" alt="Image" src="./assets/img/main-page/section-categories/hats.webp">
 													</picture>
 												</div>
 											</div>
@@ -881,7 +576,7 @@
 													<picture>
 														<source media="(max-width: 600px)" srcset="./assets/img/main-page/section-categories/all-category-600.webp" type="image/webp">
 														<source media="(max-width: 1200px)" srcset="./assets/img/main-page/section-categories/all-category-1200.webp" type="image/webp">
-														<img alt="Image" src="./assets/img/main-page/section-categories/all-category.webp">
+														<img class="slide-body-touch__media-image" alt="Image" src="./assets/img/main-page/section-categories/all-category.webp">
 													</picture>
 												</div>
 											</div>
@@ -891,9 +586,9 @@
 							</div>
 						</div>
 					</section>
-					<section class="main__discount discount">
+					<section data-fls-parallax-cursor-parent="" data-fls-parallax-smooth="10" class="main__discount discount">
 						<div class="discount__container">
-							<div class="discount__body">
+							<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.2" class="discount__body">
 								<div class="discount__content content-discount">
 									<div class="content-discount__block">
 										<div class="content-discount__decor">
@@ -917,7 +612,7 @@
 									</div>
 									<div class="content-discount__image">
 										<picture>
-											<img class="content-discount__image--things" alt="Image" src="./assets/img/main-page/section-discount/things.webp">
+											<img data-fls-parallax-cursor="" data-axis="tilt" data-fls-parallax-coefficient="95" data-fls-parallax-direction="-" class="content-discount__image--things" alt="Image" src="./assets/img/main-page/section-discount/things.webp">
 										</picture>
 									</div>
 								</div>
@@ -929,10 +624,7 @@
 										</picture>
 									</div>
 									<div class="media-discount__ps">
-										<span class="media-discount__asterisk">*</span>
-										<span class="media-discount__text">
-											The entire collection has a gender-neutral style and every item matches perfectly with the next.
-										</span>
+										The entire collection has a gender-neutral style and every item matches perfectly with the next.
 									</div>
 								</div>
 							</div>
@@ -955,7 +647,8 @@
 							<div class="slogan__mask"></div>
 						</div>
 					</div>
-					<section class="main__shoplook shoplook">
+					<section data-fls-parallax-parent="" data-fls-parallax-smooth="10" data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.2" class="main__shoplook shoplook">
+						<div class="shoplook__background"></div>
 						<div class="shoplook__container">
 							<div class="shoplook__head">
 								<div class="shoplook__blockhead blockhead">
@@ -1217,7 +910,7 @@
 									</div>
 									<div class="swiper-scrollbar"></div>
 								</div>
-								<div class="shoplook__decor">
+								<div data-fls-parallax="" data-fls-parallax-coefficient="18" class="shoplook__decor">
 									<picture>
 										<img alt="Image" src="./assets/img/main-page/section-shoplook/leaf-shoplook.webp">
 									</picture>
@@ -1226,7 +919,7 @@
 						</div>
 					</section>
 					<section class="main__trust trust">
-						<div data-fls-watcher="" data-fls-watcher-threshold="0.4" class="trust__container">
+						<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.4" class="trust__container">
 							<div class="trust__items">
 								<div class="trust__head blockhead">
 									<div class="trust__eyebrow eyebrow">you can trust</div>
@@ -1323,17 +1016,6 @@
 							</div>
 						</div>
 					</section>
-					<!--
-<div data-fls-popup="popup" aria-hidden="true" class="popup">
-<div data-fls-popup-wrapper class="popup__wrapper">
-<div data-fls-popup-body class="popup__body">
-<button data-fls-popup-close type="button" class="popup__close"><svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square" /><path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square" /></svg></button>
-<div data-fls-popup-content class="popup__text">
-</div>
-</div>
-</div>
-</div>
--->
 					<div data-fls-popup="popup-announcementbar" aria-hidden="true" class="announcementbar-popup">
 						<div data-fls-popup-wrapper="" class="announcementbar-popup__wrapper">
 							<div data-fls-popup-body="" class="announcementbar-popup__body">
@@ -1657,7 +1339,8 @@
 					</div>
 				</div>
 			</main>
-			<footer data-fls-footer="" class="footer">
+			<footer data-fls-footer="" data-fls-parallax-cursor-parent="" data-fls-parallax-smooth="10" class="footer">
+				<div class="footer__spacer"></div>
 				<div class="footer__container">
 					<div class="footer__top top-footer">
 						<div class="top-footer__column column-form">
@@ -1667,7 +1350,7 @@
 								<button data-fls-button="" type="submit" class="column-form__button button button--send">I’m in</button>
 							</form>
 						</div>
-						<div data-fls-spollers="519.98" class="top-footer__column columns-info">
+						<div data-fls-spollers="479.98" class="top-footer__column columns-info">
 							<details class="columns-info__column column-info">
 								<summary>
 									<h3 class="column-info__title">SITEMAP</h3>
@@ -1793,17 +1476,17 @@
 							</picture>
 						</a>
 					</div>
-					<div class="footer__left-decor">
+					<div data-fls-parallax-cursor="" data-axis="tilt" data-fls-parallax-coefficient="25" data-fls-parallax-direction="-" class="footer__left-decor">
 						<picture>
 							<img alt="Image" src="./assets/img/footer/leaf-left.webp">
 						</picture>
 					</div>
-					<div class="footer__center-decor">
+					<div data-fls-parallax-cursor="" data-axis="tilt" data-fls-parallax-coefficient="35" data-fls-parallax-direction="-" class="footer__center-decor">
 						<picture>
 							<img alt="Image" src="./assets/img/footer/leaf-center.webp">
 						</picture>
 					</div>
-					<div class="footer__right-decor">
+					<div data-fls-parallax-cursor="" data-axis="tilt" data-fls-parallax-coefficient="25" data-fls-parallax-direction="-" class="footer__right-decor">
 						<picture>
 							<img alt="Image" src="./assets/img/footer/leaf-right.webp">
 						</picture>

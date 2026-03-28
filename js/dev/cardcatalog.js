@@ -1,4 +1,4 @@
-import { s as slideUp, d as slideToggle } from "./common.min.js";
+import { s as slideUp, a as slideToggle } from "./common.min.js";
 let formValidate = {
   getErrors(form) {
     let error = 0;

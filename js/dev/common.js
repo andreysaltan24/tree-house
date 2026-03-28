@@ -27,11 +27,13 @@ let slideUp = (target, duration = 500, showmore = 0) => {
       target.style.removeProperty("transition-duration");
       target.style.removeProperty("transition-property");
       target.classList.remove("--slide");
-      document.dispatchEvent(new CustomEvent("slideUpDone", {
-        detail: {
-          target
-        }
-      }));
+      document.dispatchEvent(
+        new CustomEvent("slideUpDone", {
+          detail: {
+            target
+          }
+        })
+      );
     }, duration);
   }
 };
@@ -61,11 +63,13 @@ let slideDown = (target, duration = 500, showmore = 0) => {
       target.style.removeProperty("transition-duration");
       target.style.removeProperty("transition-property");
       target.classList.remove("--slide");
-      document.dispatchEvent(new CustomEvent("slideDownDone", {
-        detail: {
-          target
-        }
-      }));
+      document.dispatchEvent(
+        new CustomEvent("slideDownDone", {
+          detail: {
+            target
+          }
+        })
+      );
     }, duration);
   }
 };
@@ -199,11 +203,11 @@ if (document.querySelector(".filter-catalog__title")) {
   });
 }
 export {
-  bodyLock as a,
-  bodyLockStatus as b,
+  slideToggle as a,
+  bodyLock as b,
   bodyUnlock as c,
-  slideToggle as d,
-  dataMediaQueries as e,
+  dataMediaQueries as d,
+  bodyLockStatus as e,
   bodyLockToggle as f,
   gotoBlock as g,
   getHash as h,
