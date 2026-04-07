@@ -1002,9 +1002,6 @@ html[data-fls-menu-open] .announcementbar, body[data-fls-menu-open] .announcemen
   .card-spollers__item {
     padding-block: 1rem;
   }
-  .menu__list {
-    gap: 0.625rem;
-  }
   .menu__mob-sublist {
     padding-top: 1.25rem;
   }
@@ -1072,6 +1069,9 @@ html[data-fls-menu-open] .announcementbar, body[data-fls-menu-open] .announcemen
   }
 }
 @media (min-width: 61.99875em) and (width <= 20em) {
+  .menu__list {
+    gap: 0.625rem;
+  }
   .submenu__body {
     margin-bottom: 8.0625rem;
   }
@@ -1085,9 +1085,6 @@ html[data-fls-menu-open] .announcementbar, body[data-fls-menu-open] .announcemen
   }
   .card-spollers__item {
     padding-block: clamp( 1rem , 0.830508474575rem  +  0.8474576271vw , 1.5rem );
-  }
-  .menu__list {
-    gap: clamp( 0.625rem , 0.20127118644375rem  +  2.1186440678vw , 1.875rem );
   }
   .menu__mob-sublist {
     padding-top: clamp( 1.25rem , 1.03813559321875rem  +  1.0593220339vw , 1.875rem );
@@ -1173,6 +1170,9 @@ html[data-fls-menu-open] .announcementbar, body[data-fls-menu-open] .announcemen
   }
 }
 @media (min-width: 61.99875em) and (width > 79em) {
+  .menu__list {
+    gap: 1.875rem;
+  }
   .submenu__body {
     margin-bottom: 1.5625rem;
   }
@@ -1181,6 +1181,9 @@ html[data-fls-menu-open] .announcementbar, body[data-fls-menu-open] .announcemen
   }
 }
 @media (min-width: 61.99875em) and (width > 20em) and (width <= 79em) {
+  .menu__list {
+    gap: clamp( 0.625rem , 0.20127118644375rem  +  2.1186440678vw , 1.875rem );
+  }
   .submenu__body {
     margin-bottom: clamp( 1.5625rem , 10.26588983050625rem  +  -11.0169491525vw , 8.0625rem );
   }
@@ -1219,9 +1222,6 @@ html[data-fls-menu-open] .announcementbar, body[data-fls-menu-open] .announcemen
   }
   .card-spollers__item {
     padding-block: 1.5rem;
-  }
-  .menu__list {
-    gap: 1.875rem;
   }
   .menu__mob-sublist {
     padding-top: 1.875rem;
