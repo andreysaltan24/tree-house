@@ -1740,6 +1740,9 @@
   html:not([data-fls-touch]) .card-shoplook__button:hover {
     color: #c58a46;
   }
+  [data-fls-scrolllock] .fls-preloader {
+    padding-right: 0.9375rem;
+  }
 }
 @media (any-hover: none){
   .slide-shoplook__block {
