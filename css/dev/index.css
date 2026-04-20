@@ -27,7 +27,7 @@
   gap: 1rem;
 }
 .project__link {
-  display: flex;
+  display: inline-flex;
   gap: 0.75rem;
   font-size: 1.125rem;
   transition: color 0.4s cubic-bezier(0.28, 0.8, 0.5, 1);
@@ -54,16 +54,16 @@
 }
 @media (width > 20em) and (width <= 79em) {
   .project {
-    padding-top: clamp( 3.75rem , 3.32627118644375rem  +  2.1186440678vw , 5rem );
+    padding-top: clamp(3.75rem, 3.32627118644375rem + 2.1186440678vw, 5rem);
   }
   .project {
-    padding-bottom: clamp( 3.75rem , 3.32627118644375rem  +  2.1186440678vw , 5rem );
+    padding-bottom: clamp(3.75rem, 3.32627118644375rem + 2.1186440678vw, 5rem);
   }
   .project__title {
-    font-size: clamp( 2.375rem , 2.16313559321875rem  +  1.0593220339vw , 3rem );
+    font-size: clamp(2.375rem, 2.16313559321875rem + 1.0593220339vw, 3rem);
   }
   .project__eyebrow {
-    margin-bottom: clamp( 1.25rem , 1.03813559321875rem  +  1.0593220339vw , 1.875rem );
+    margin-bottom: clamp(1.25rem, 1.03813559321875rem + 1.0593220339vw, 1.875rem);
   }
 }
 @media (width > 79em) {
