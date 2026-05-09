@@ -171,7 +171,7 @@ body {
   font-family: GT;
   font-size: 0.875rem;
   font-weight: 400;
-  background: #f4f3f0;
+  background: #50735f;
 }
 body::selection {
   color: #c58a46;
@@ -207,6 +207,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .wrapper > main {
   flex: 1 1 auto;
+  background: #f4f3f0;
 }
 .wrapper > * {
   min-width: 0;
